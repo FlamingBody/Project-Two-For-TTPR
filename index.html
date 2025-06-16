@@ -1,19 +1,47 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Wen Xiong & Jamel Version of Netflix</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="function.js"></script>
-    </head>
-    <body>
-        <header>
+  <head>
+    <title>Wen Xiong & Jamel Version of Netflix</title>
 
-        </header>
-        <main>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Funnel+Display:wght@300..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
 
-        </main>
-        <section>
+    <link rel="stylesheet" href="style.css" />
+    <script src="function.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <img class="logo" src="netflix.png" width="200px" />
 
-        </section>
-    </body>
+        <div class="header_input">
+          <select name="language">
+            <option>English</option>
+            <option>Espanol</option>
+          </select>
+          <button name="sign-in">Sign In</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <img src="popcorn.png" width="100px" />
+
+      <div class="mini_tag">
+        <div class="mini_tag_sentence">
+          <h2>The Netflix you love for just $7.99.</h2>
+          <p style="font-size: larger">
+            Get our most affordable, ad-suported plan.
+          </p>
+        </div>
+        <button id="learnMore">Learn More</button>
+      </div>
+    </main>
+
+    <section></section>
+  </body>
 </html>
