@@ -13,10 +13,12 @@
     <link rel="stylesheet" href="style.css" />
     <script src="function.js"></script>
   </head>
-  <body>
+  <body style="background-color:black; background-image: url('img/backdrop.png'); background-size: contain; background-repeat: no-repeat;">
+    <div style="background-color: rgb(0, 0, 0, 0.6); padding-left: 8%; padding-right: 8%; padding-top: 2%;">
     <header>
-      <div class="header">
-        <!--<img src="img/backdrop.png" width="100%" style="position: absolute; opacity: 50%; left:0"/>-->
+      <!--<img src="img/backdrop.png" width="100%" style="position: absolute; opacity: 10%; left:0"/>-->
+      <div class="header_part1">
+        
         <img class="logo" src="netflix.png" width="200px" />
 
         <div class="header_input">
@@ -27,6 +29,16 @@
           <button name="sign-in">Sign In</button>
         </div>
         
+      </div>
+
+      <div class="header_part2">
+      <h1>Unlimited movies, TV shows, and more</h1>
+      <h2>Starts at $7.99. Cancel anytime.</h2>
+      <div>Ready to watch? Enter your email to create or restart your membership.</div>
+      <div class="second_input">
+        <input type="email" id="email" name="email" placeholder="    Email Address">
+        <button name="sign-in">Sign In</button>
+      </div>
       </div>
     </header>
 
@@ -139,5 +151,6 @@
     </main>
 
     <section></section>
+  </div>
   </body>
 </html>
