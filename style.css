@@ -1,57 +1,215 @@
+*{
+    transition: width 0.2s, height 0.2s, transform 0.2s;
+}
+
 body{
     background-color: black;
-    padding: 50px;
     font-family: "Funnel Display", sans-serif;
+    padding: 8%;
 }
 
 
 .header {
     display: flex;
-    align-items: right;
+    align-items: center;
     justify-content:space-between;
 }
 
+.header_input{
+    margin: 0;
+    height: 20px;
+    transform: scale(2,2);
+}
+
+.header_input > select {
+    background-color: black;
+    color: white;
+    border: 1px solid grey;
+}
+
+.header_input > button {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
 .main{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main > div {
+    margin: 25px;
+    color: white;
+}
+
+.main > div:nth-child(1) {
+
     display: flex;
     align-items: center;
-    justify-content: baseline;
-    margin: 100px;
+    justify-content: center;
+
+}
+.main > div:nth-child(1):hover {
+
+    transform: scale(1.01,1.01);
 }
 
-.logo {
-    position: relative;
-    left: 10px;
-    justify-content: left;
+.main > div:nth-child(2){
+
+    align-items: flex-end;
 }
 
-.header_input{
-    float: right;
-    justify-content: right;
+#horizontal_scroll_movie{
+
+    overflow: scroll;
+    white-space: nowrap;
 }
 
-.mini_tag{
-    background-color: rgb(41, 5, 60);
-    padding-left: 50px;
+#horizontal_scroll_movie > img{
+    width: 275px;
+    height: 361px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#horizontal_scroll_movie > img:hover{
+    transform: scale(1.05,1.05);
+}
+
+.main > div:nth-child(3){
+
+    align-items: flex-end;
+    
+}
+
+.main > div:nth-child(3) > div{
+
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    column-gap: 10px;
+}
+
+.main > div:nth-child(3) > div > div {
+    background-image: linear-gradient(to bottom right, rgb(11, 11, 62), rgb(42, 4, 40));
+    color: white;
     border-radius: 20px;
-    width: 70%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.main > div:nth-child(3) > div > div > div{
+    height: 70%;
+    margin: 0;
+}
+
+.main > div:nth-child(3) > div > div > div > p{
+    color:rgb(209, 206, 206);
+    font-size: large;
+}
+
+.main > div:nth-child(3) > div > div > img{
+
+    align-self: flex-end;
+    margin: 0;
+    width: 75px;
+    height: 75px;
+}
+
+.main > div:nth-child(4){
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 10px;
+}
+
+.main >div:nth-child(4) > div {
+    background-color: rgb(44, 44, 44);
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.mini_tag_sentence{
+.main > div:nth-child(4) > div > div {
+    padding: 30px;
+    font-size: xx-large;
+}
+
+.mini_tag_container{
+    background-image: linear-gradient(to right, rgb(41, 5, 60), rgb(7, 6, 68));
+    padding-left: 50px;
+    border-radius: 20px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mini_tag_container:hover{
+    filter: brightness(125%);
+}
+.mini_tag_container > div{
     color:white;
-    background-color: rgb(41, 5, 60);
 }
 
 #learnMore{
     height: 50px;
-    width: 150px;
+    width: 140px;
     color: white;
-    font-size: 25px;
-    font-weight: 700;
-    background-color: grey;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: rgb(83, 82, 82);
     margin-right: 50px;
     border: none;
     border-radius: 10px;
+}
+#learnMore:hover{
+    background-color: rgb(69, 69, 69);
+}
+
+
+
+
+
+
+
+@media (max-width: 1600px){
+
+    .main > div:nth-child(3) > div{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+
+
+    #horizontal_scroll_movie > img{
+        width: 200px;
+        height: 263px;
+        border-radius: 10px;
+        margin: 10px;
+    }
+
+}
+
+@media (max-width: 1120px){
+    .main > div:nth-child(3) > div{
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-rows: minmax(0, 1fr);
+        row-gap: 10px;
+    }
+
+    #horizontal_scroll_movie > img{
+        width: 150px;
+        height: 197px;
+        border-radius: 10px;
+        margin: 5px;
+    }
+    .main > div:nth-child(4) > div > div {
+        font-size: x-large;
+    }
 }
