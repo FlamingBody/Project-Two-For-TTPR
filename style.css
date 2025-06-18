@@ -6,12 +6,17 @@
 body{
     background-color: black;
     font-family: "Funnel Display", sans-serif;
+<<<<<<< HEAD
     min-width: 860px;
     padding-bottom: 100px;
 }
 
 /* Applying Changes to the Title and Header Section */
 
+=======
+}
+
+>>>>>>> 1d4e8d248d191884c307f262593fb03a56fd9ea1
 header{
     color: white;
 }
@@ -44,6 +49,7 @@ button:hover{
     
 }
 
+<<<<<<< HEAD
 .header_input{
     margin: 0;
     height: 50px;
@@ -55,15 +61,33 @@ select.language {
     color: white;
     border: 1px solid grey;
     width: 50%;
+=======
+.second_input{
+    margin: 0;
+    height: 70px;
+    width: 250px;
+}
+
+.second_input > input {
+    background-color: black;
+    color: white;
+    border: 1px solid grey;
+    width: 70%;
+>>>>>>> 1d4e8d248d191884c307f262593fb03a56fd9ea1
     height: 100%;
     font-size: 20px;
 }
 
+<<<<<<< HEAD
 .header_input > button {
+=======
+.second_input > button {
+>>>>>>> 1d4e8d248d191884c307f262593fb03a56fd9ea1
     background-color: red;
     color: white;
     border: none;
     border-radius: 5px;
+<<<<<<< HEAD
     width: 45%;
     height: 80%;
     font-size: 20px;
@@ -81,15 +105,38 @@ select.language {
     color: white;
     border: 1px solid grey;
     width: 65%;
+=======
+    width: 25%;
     height: 100%;
     font-size: 20px;
 }
 
+.header_input{
+    margin: 0;
+    height: 50px;
+    width: 250px;
+}
+
+.header_input > select {
+    background-color: black;
+    color: white;
+    border: 1px solid grey;
+    width: 50%;
+>>>>>>> 1d4e8d248d191884c307f262593fb03a56fd9ea1
+    height: 100%;
+    font-size: 20px;
+}
+
+<<<<<<< HEAD
 .second_input > button {
+=======
+.header_input > button {
+>>>>>>> 1d4e8d248d191884c307f262593fb03a56fd9ea1
     background-color: red;
     color: white;
     border: none;
     border-radius: 5px;
+<<<<<<< HEAD
     width: 30%;
     height: 100%;
     font-size: 25px;
@@ -115,6 +162,14 @@ select.language {
 /* Beginning of Style to the Main Body */
 
 main , section{
+=======
+    width: 45%;
+    height: 80%;
+    font-size: 20px;
+}
+
+.main{
+>>>>>>> 1d4e8d248d191884c307f262593fb03a56fd9ea1
 
     width: 100%;
     display: flex;
@@ -123,6 +178,7 @@ main , section{
     
 }
 
+<<<<<<< HEAD
 main > div , section > div{
     margin-left: 200px;
     margin-right: 200px;
@@ -133,12 +189,21 @@ main > div , section > div{
 /* Apply Style Change to Learn More Tab */
 
 main > div:nth-child(1) {
+=======
+.main > div {
+    margin: 25px;
+    color: white;
+}
+
+.main > div:nth-child(1) {
+>>>>>>> 1d4e8d248d191884c307f262593fb03a56fd9ea1
 
     display: flex;
     align-items: center;
     justify-content: center;
 
 }
+<<<<<<< HEAD
 main > div:nth-child(1):hover {
     transform: scale(1.05,1.05);
 }
@@ -181,6 +246,14 @@ main > div:nth-child(1):hover {
 /* Apply Style Change to Trending Now Section */
 
 main > div:nth-child(2){
+=======
+.main > div:nth-child(1):hover {
+
+    transform: scale(1.01,1.01);
+}
+
+.main > div:nth-child(2){
+>>>>>>> 1d4e8d248d191884c307f262593fb03a56fd9ea1
 
     align-items: flex-end;
 }
@@ -192,8 +265,13 @@ main > div:nth-child(2){
 }
 
 #horizontal_scroll_movie > img{
+<<<<<<< HEAD
     width: 225px;
     height: 295px;
+=======
+    width: 275px;
+    height: 361px;
+>>>>>>> 1d4e8d248d191884c307f262593fb03a56fd9ea1
     border-radius: 10px;
     margin: 10px;
 }
@@ -202,6 +280,7 @@ main > div:nth-child(2){
     transform: scale(1.05,1.05);
 }
 
+<<<<<<< HEAD
 ::-webkit-scrollbar {
     width: 0px;
     height: 0px;
@@ -212,19 +291,30 @@ main > div:nth-child(2){
 /* Apply Style Change to More Reasons to Join Section */
 
 main > div:nth-child(3){
+=======
+.main > div:nth-child(3){
+>>>>>>> 1d4e8d248d191884c307f262593fb03a56fd9ea1
 
     align-items: flex-end;
     
 }
 
+<<<<<<< HEAD
 main > div:nth-child(3) > div{
+=======
+.main > div:nth-child(3) > div{
+>>>>>>> 1d4e8d248d191884c307f262593fb03a56fd9ea1
 
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     column-gap: 10px;
 }
 
+<<<<<<< HEAD
 main > div:nth-child(3) > div > div {
+=======
+.main > div:nth-child(3) > div > div {
+>>>>>>> 1d4e8d248d191884c307f262593fb03a56fd9ea1
     background-image: linear-gradient(to bottom right, rgb(11, 11, 62), rgb(42, 4, 40));
     color: white;
     border-radius: 20px;
@@ -232,13 +322,19 @@ main > div:nth-child(3) > div > div {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+<<<<<<< HEAD
     height: 350px
 }
 main > div:nth-child(3) > div > div > div{
+=======
+}
+.main > div:nth-child(3) > div > div > div{
+>>>>>>> 1d4e8d248d191884c307f262593fb03a56fd9ea1
     height: 70%;
     margin: 0;
 }
 
+<<<<<<< HEAD
 main > div:nth-child(3) > div > div > div > p{
     color:rgb(209, 206, 206);
     font-size: large;
@@ -247,6 +343,14 @@ main > div:nth-child(3) > div > div > div > p{
 }
 
 main > div:nth-child(3) > div > div > img{
+=======
+.main > div:nth-child(3) > div > div > div > p{
+    color:rgb(209, 206, 206);
+    font-size: large;
+}
+
+.main > div:nth-child(3) > div > div > img{
+>>>>>>> 1d4e8d248d191884c307f262593fb03a56fd9ea1
 
     align-self: flex-end;
     margin: 0;
@@ -254,6 +358,7 @@ main > div:nth-child(3) > div > div > img{
     height: 75px;
 }
 
+<<<<<<< HEAD
 /* End of Style Change to Reasons to Join Section */
 
 /* Apply Style Change to Question and Answer Section */
@@ -265,21 +370,39 @@ main > div:nth-child(4){
 }
 
 main > div:nth-child(4) > div {
+=======
+.main > div:nth-child(4){
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 10px;
+}
+
+.main > div:nth-child(4) > div {
+>>>>>>> 1d4e8d248d191884c307f262593fb03a56fd9ea1
     background-color: rgb(44, 44, 44);
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+<<<<<<< HEAD
 main > div:nth-child(4) > div:nth-child(even):hover {
     filter: brightness(125%);
 }
 
 main > div:nth-child(4) > div > div {
+=======
+.main > div:nth-child(4) > div:hover {
+    filter: brightness(125%);
+}
+
+.main > div:nth-child(4) > div > div {
+>>>>>>> 1d4e8d248d191884c307f262593fb03a56fd9ea1
     padding: 20px;
     font-size: xx-large;
 }
 
+<<<<<<< HEAD
 /* End of Style Change to Question and Answer Section */
 
 /* End of Style to the Main Body */
@@ -345,16 +468,61 @@ a {
     }
 
     main > div:nth-child(3) > div{
+=======
+.mini_tag_container{
+    background-image: linear-gradient(to right, rgb(41, 5, 60), rgb(7, 6, 68));
+    padding: 20px;
+    border-radius: 20px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mini_tag_container:hover{
+    filter: brightness(125%);
+}
+.mini_tag_container > div{
+    color:white;
+}
+
+#learnMore{
+    height: 50px;
+    width: 140px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: rgb(83, 82, 82);
+    margin-right: 50px;
+    border: none;
+    border-radius: 10px;
+}
+#learnMore:hover{
+    background-color: rgb(69, 69, 69);
+}
+
+
+
+
+
+
+
+@media (max-width: 1600px){
+
+    .main > div:nth-child(3) > div{
+>>>>>>> 1d4e8d248d191884c307f262593fb03a56fd9ea1
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         column-gap: 10px;
         row-gap: 10px;
     }
 
+<<<<<<< HEAD
     main > div:nth-child(3) > div > div {
         height: 200px;
     }
 
+=======
+>>>>>>> 1d4e8d248d191884c307f262593fb03a56fd9ea1
 
     #horizontal_scroll_movie > img{
         width: 200px;
@@ -363,6 +531,7 @@ a {
         margin: 10px;
     }
 
+<<<<<<< HEAD
     #links{
         grid-template-columns: repeat(3, minmax(0,1fr));
     
@@ -394,22 +563,32 @@ a {
     }
 
     main > div:nth-child(3) > div{
+=======
+}
+
+@media (max-width: 1120px){
+    .main > div:nth-child(3) > div{
+>>>>>>> 1d4e8d248d191884c307f262593fb03a56fd9ea1
         display: grid;
         grid-template-columns: minmax(0, 1fr);
         grid-template-rows: minmax(0, 1fr);
         row-gap: 10px;
     }
 
+<<<<<<< HEAD
     main > div:nth-child(4) > div > div {
         font-size: x-large;
     }
 
+=======
+>>>>>>> 1d4e8d248d191884c307f262593fb03a56fd9ea1
     #horizontal_scroll_movie > img{
         width: 150px;
         height: 197px;
         border-radius: 10px;
         margin: 5px;
     }
+<<<<<<< HEAD
 
     #links{
         grid-template-columns: repeat(2, minmax(0,1fr));
@@ -426,3 +605,9 @@ a {
     }
 
 }
+=======
+    .main > div:nth-child(4) > div > div {
+        font-size: x-large;
+    }
+}
+>>>>>>> 1d4e8d248d191884c307f262593fb03a56fd9ea1
