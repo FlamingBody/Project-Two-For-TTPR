@@ -12,6 +12,16 @@ header{
     color: white;
 }
 
+.colorfulDivider{
+    
+    border: 7px solid transparent; 
+    background: linear-gradient(to bottom, rgb(10, 8, 112), rgb(0,0,0)) padding-box,
+    linear-gradient(to bottom, red, black, black 90%) border-box; 
+    border-top-left-radius: 90%; 
+    border-top-right-radius: 90%; 
+    height: 100px;
+}
+
 button:hover{
     filter: brightness(75%);
 }
@@ -40,30 +50,7 @@ button:hover{
     
 }
 
-.second_input{
-    margin: 0;
-    height: 70px;
-    width: 250px;
-}
 
-.second_input > input {
-    background-color: black;
-    color: white;
-    border: 1px solid grey;
-    width: 70%;
-    height: 100%;
-    font-size: 20px;
-}
-
-.second_input > button {
-    background-color: red;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    width: 25%;
-    height: 100%;
-    font-size: 20px;
-}
 
 .header_input{
     margin: 0;
@@ -71,8 +58,8 @@ button:hover{
     width: 250px;
 }
 
-.header_input > select {
-    background-color: black;
+select {
+    background-color: transparent;
     color: white;
     border: 1px solid grey;
     width: 50%;
@@ -90,6 +77,32 @@ button:hover{
     font-size: 20px;
 }
 
+.second_input{
+    margin: 0;
+    height: 70px;
+    width: 250px;
+}
+
+.second_input > input {
+    background-color: black;
+    color: white;
+    border: 1px solid grey;
+    width: 65%;
+    height: 100%;
+    font-size: 20px;
+}
+
+.second_input > button {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 30%;
+    height: 100%;
+    font-size: 25px;
+    font-weight: 300;
+}
+
 .main{
 
     width: 100%;
@@ -100,7 +113,8 @@ button:hover{
 }
 
 .main > div {
-    margin: 25px;
+    margin-left: 200px;
+    margin-right: 200px;
     color: white;
 }
 
@@ -237,7 +251,12 @@ button:hover{
 
 
 
-@media (max-width: 1600px){
+@media (max-width: 1500px){
+
+    .main > div {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
 
     .main > div:nth-child(3) > div{
         display: grid;
@@ -257,12 +276,35 @@ button:hover{
 }
 
 @media (max-width: 1120px){
+
+    .header_part2 > h1, .header_part2 > h2, .header_part2 > div {
+        margin-bottom: 20px;
+        text-align: center;
+        width: 600px;
+    }
+    .header_part2 > h1{
+        font-size: 3rem;
+        font-weight: 1000;
+        
+    }
+
+    .second_input{
+        display: block;
+        
+    }
+
+    .main > div {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
     .main > div:nth-child(3) > div{
         display: grid;
         grid-template-columns: minmax(0, 1fr);
         grid-template-rows: minmax(0, 1fr);
         row-gap: 10px;
     }
+
 
     #horizontal_scroll_movie > img{
         width: 150px;

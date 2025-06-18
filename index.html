@@ -13,9 +13,10 @@
     <link rel="stylesheet" href="style.css" />
     <script src="function.js"></script>
   </head>
-  <body style="background-color:black; background-image: url('img/backdrop.png'); background-size: contain; background-repeat: no-repeat;">
-    <div style="background-color: rgb(0, 0, 0, 0.6); padding-left: 8%; padding-right: 8%; padding-top: 2%;">
-    <header>
+  <body>
+    <div style="background-color:black; background-image: url('img/backdrop.png'); background-size:cover; background-repeat: no-repeat;">
+    <div style="background-image: linear-gradient(to bottom,  rgb(0,0,0),rgb(0, 0, 0, 0.5), rgb(0,0,0)); padding-top: 2%;">
+    <header style="padding-left: 8%; padding-right: 8%;">
       <!--<img src="img/backdrop.png" width="100%" style="position: absolute; opacity: 10%; left:0"/>-->
       <div class="header_part1">
         
@@ -23,7 +24,7 @@
 
         <div class="header_input">
           <select name="language">
-            <option>English</option>
+            <option data-icon="glyphicon-music">English</option>
             <option>Espanol</option>
           </select>
           <button name="sign-in">Sign In</button>
@@ -37,11 +38,15 @@
       <div>Ready to watch? Enter your email to create or restart your membership.</div>
       <div class="second_input">
         <input type="email" id="email" name="email" placeholder="    Email Address">
-        <button name="sign-in">Sign In</button>
+        <button name="sign-in">Get Started &nbsp &nbsp ></button>
       </div>
       </div>
     </header>
-
+    <div class="colorfulDivider"></div>
+    </div>
+    </div>
+    
+    
     <main class="main">
       <div>
         <img src="img/icon_img/popcorn_icon.png" width="100px" />
@@ -151,6 +156,6 @@
     </main>
 
     <section></section>
-  </div>
+  
   </body>
 </html>
