@@ -1,8 +1,24 @@
-<<<<<<< HEAD
+
 *{
     transition: width 0.2s, height 0.2s, transform 0.2s;
     margin: 0;
 }
+@font-face {
+  font-family: myFirstFont;
+  src: url(media/fonts/NetflixSans_W_Bd.woff2);
+  
+}
+@font-face {
+  font-family: mySecondFont;
+  src: url(media/fonts/NetflixSans_W_Blk.woff2);
+  
+}
+@font-face {
+    font-family: smallFont;
+    src: url(media/fonts/NetflixSans_W_Rg.woff2);
+}
+
+
 
 body{
     background-color: black;
@@ -117,6 +133,7 @@ button:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
+   
     
 }
 
@@ -297,21 +314,44 @@ div{
     .main > div:nth-child(4) > div > div {
         font-size: x-large;
     }
-    @font-face {
-  font-family: myFirstFont;
-  src: url(media/fonts/NetflixSans_W_Bd.woff2);
-  
+    
+
+header{
+    display: flex;
+    justify-content: space-between;
+    
 }
-@font-face {
-  font-family: mySecondFont;
-  src: url(media/fonts/NetflixSans_W_Blk.woff2);
-  
+#languageSelect{
+    position: relative;
+    left: 280px;
+    height: 5em;
+
 }
-@font-face {
-    font-family: smallFont;
-    src: url(media/fonts/NetflixSans_W_Rg.woff2);
+#signIn{
+    background-color: red;
+    border-radius: 10px;
+    height: 5em;
+}
+#one{
+    margin-top: 200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+#lineTwo{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+    
 }
 
-#faq{
-    font-family: smallFont;
+body{
+    background-color: black;
+}
 }
