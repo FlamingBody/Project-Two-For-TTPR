@@ -88,6 +88,9 @@ button:hover{
     position: relative;
     left: 10%;
     padding-bottom: 30px;
+    margin: 0;
+    height: 50px;
+    width: 75%;
 }
 
 .third_input > input {
@@ -128,7 +131,21 @@ button:hover{
     height: 80%;
     font-size: 20px;
 }
+#foot{
+    position: relative;
+    left: 15%;
+    background-color: black;
+    color: white;
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 10%;
+    height: 100%;
+    font-size: 25px;
+    padding-left: 15px;
+}
+#third_input{
 
+}
 
 .header_input > button {
     background-color: red;
