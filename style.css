@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 *{
     transition: width 0.2s, height 0.2s, transform 0.2s;
@@ -333,3 +334,72 @@ div{
     grid-template-columns: repeat(4, minmax(0,1fr));
 
 }
+=======
+header{
+    display: flex;
+    justify-content: space-between;
+    
+}
+#languageSelect{
+    position: relative;
+    left: 280px;
+    height: 5em;
+
+}
+#signIn{
+    background-color: red;
+    border-radius: 10px;
+    height: 5em;
+}
+#one{
+    margin-top: 200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+#lineTwo{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+    
+}
+body{
+    background-color: black;
+}
+@font-face {
+  font-family: myFirstFont;
+  src: url(media/fonts/NetflixSans_W_Bd.woff2);
+  
+}
+@font-face {
+  font-family: mySecondFont;
+  src: url(media/fonts/NetflixSans_W_Blk.woff2);
+  
+}
+@font-face {
+    font-family: smallFont;
+    src: url(media/fonts/NetflixSans_W_Rg.woff2);
+}
+
+#lineOne {
+
+  font-family: mySecondFont;
+  
+  
+}
+#lineTwo{
+    font-family: myFirstFont;
+}
+#lineThree{
+    font-family: smallFont;
+}
+#lineFour{
+    font-family: smallFont;
+}
+>>>>>>> 67d0f6d8501c2bdeddf05aebad1491df26e2e67b
