@@ -6,20 +6,14 @@
 body{
     background-color: black;
     font-family: "Funnel Display", sans-serif;
+    min-width: 860px;
+    padding-bottom: 100px;
 }
+
+/* Applying Changes to the Title and Header Section */
 
 header{
     color: white;
-}
-
-.colorfulDivider{
-    
-    border: 7px solid transparent; 
-    background: linear-gradient(to bottom, rgb(10, 8, 112), rgb(0,0,0)) padding-box,
-    linear-gradient(to bottom, red, black, black 90%) border-box; 
-    border-top-left-radius: 90%; 
-    border-top-right-radius: 90%; 
-    height: 100px;
 }
 
 button:hover{
@@ -50,15 +44,13 @@ button:hover{
     
 }
 
-
-
 .header_input{
     margin: 0;
     height: 50px;
     width: 250px;
 }
 
-select {
+select.language {
     background-color: transparent;
     color: white;
     border: 1px solid grey;
@@ -75,12 +67,13 @@ select {
     width: 45%;
     height: 80%;
     font-size: 20px;
+    font-weight: bold;
 }
 
 .second_input{
     margin: 0;
     height: 70px;
-    width: 250px;
+    width: 100%;
 }
 
 .second_input > input {
@@ -100,10 +93,28 @@ select {
     width: 30%;
     height: 100%;
     font-size: 25px;
-    font-weight: 300;
+    font-weight: bold;
 }
 
-.main{
+/* End of Changes to the Title and Header Section */
+
+/* Applying Style to the Divider between Header and Main Body */
+
+.colorfulDivider{
+    
+    border: 7px solid transparent; 
+    background: linear-gradient(to bottom, rgb(10, 8, 112), rgb(0,0,0)) padding-box,
+    linear-gradient(to bottom, red, black, black 90%) border-box; 
+    border-top-left-radius: 90%; 
+    border-top-right-radius: 90%; 
+    height: 100px;
+}
+
+/* End of Style to the Divider between Header and Main Body */
+
+/* Beginning of Style to the Main Body */
+
+main , section{
 
     width: 100%;
     display: flex;
@@ -112,106 +123,24 @@ select {
     
 }
 
-.main > div {
+main > div , section > div{
     margin-left: 200px;
     margin-right: 200px;
+    margin-bottom: 75px;
     color: white;
 }
 
-.main > div:nth-child(1) {
+/* Apply Style Change to Learn More Tab */
+
+main > div:nth-child(1) {
 
     display: flex;
     align-items: center;
     justify-content: center;
 
 }
-.main > div:nth-child(1):hover {
-
-    transform: scale(1.01,1.01);
-}
-
-.main > div:nth-child(2){
-
-    align-items: flex-end;
-}
-
-#horizontal_scroll_movie{
-
-    overflow: scroll;
-    white-space: nowrap;
-}
-
-#horizontal_scroll_movie > img{
-    width: 275px;
-    height: 361px;
-    border-radius: 10px;
-    margin: 10px;
-}
-
-#horizontal_scroll_movie > img:hover{
+main > div:nth-child(1):hover {
     transform: scale(1.05,1.05);
-}
-
-.main > div:nth-child(3){
-
-    align-items: flex-end;
-    
-}
-
-.main > div:nth-child(3) > div{
-
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    column-gap: 10px;
-}
-
-.main > div:nth-child(3) > div > div {
-    background-image: linear-gradient(to bottom right, rgb(11, 11, 62), rgb(42, 4, 40));
-    color: white;
-    border-radius: 20px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-.main > div:nth-child(3) > div > div > div{
-    height: 70%;
-    margin: 0;
-}
-
-.main > div:nth-child(3) > div > div > div > p{
-    color:rgb(209, 206, 206);
-    font-size: large;
-}
-
-.main > div:nth-child(3) > div > div > img{
-
-    align-self: flex-end;
-    margin: 0;
-    width: 75px;
-    height: 75px;
-}
-
-.main > div:nth-child(4){
-    display: grid;
-    grid-template-columns: minmax(0, 1fr);
-    row-gap: 10px;
-}
-
-.main > div:nth-child(4) > div {
-    background-color: rgb(44, 44, 44);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.main > div:nth-child(4) > div:hover {
-    filter: brightness(125%);
-}
-
-.main > div:nth-child(4) > div > div {
-    padding: 20px;
-    font-size: xx-large;
 }
 
 .mini_tag_container{
@@ -223,9 +152,11 @@ select {
     align-items: center;
     justify-content: space-between;
 }
+
 .mini_tag_container:hover{
-    filter: brightness(125%);
+    filter: brightness(150%);
 }
+
 .mini_tag_container > div{
     color:white;
 }
@@ -245,24 +176,183 @@ select {
     background-color: rgb(69, 69, 69);
 }
 
+/* End of Style Change to Learn More Tab */
 
+/* Apply Style Change to Trending Now Section */
 
+main > div:nth-child(2){
 
+    align-items: flex-end;
+}
 
+#horizontal_scroll_movie{
 
+    overflow: scroll;
+    white-space: nowrap;
+}
+
+#horizontal_scroll_movie > img{
+    width: 225px;
+    height: 295px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#horizontal_scroll_movie > img:hover{
+    transform: scale(1.05,1.05);
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+/* End of Style Change to Trending Now Section */
+
+/* Apply Style Change to More Reasons to Join Section */
+
+main > div:nth-child(3){
+
+    align-items: flex-end;
+    
+}
+
+main > div:nth-child(3) > div{
+
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    column-gap: 10px;
+}
+
+main > div:nth-child(3) > div > div {
+    background-image: linear-gradient(to bottom right, rgb(11, 11, 62), rgb(42, 4, 40));
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 350px
+}
+main > div:nth-child(3) > div > div > div{
+    height: 70%;
+    margin: 0;
+}
+
+main > div:nth-child(3) > div > div > div > p{
+    color:rgb(209, 206, 206);
+    font-size: large;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+main > div:nth-child(3) > div > div > img{
+
+    align-self: flex-end;
+    margin: 0;
+    width: 75px;
+    height: 75px;
+}
+
+/* End of Style Change to Reasons to Join Section */
+
+/* Apply Style Change to Question and Answer Section */
+
+main > div:nth-child(4){
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 5px;
+}
+
+main > div:nth-child(4) > div {
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main > div:nth-child(4) > div:nth-child(even):hover {
+    filter: brightness(125%);
+}
+
+main > div:nth-child(4) > div > div {
+    padding: 20px;
+    font-size: xx-large;
+}
+
+/* End of Style Change to Question and Answer Section */
+
+/* End of Style to the Main Body */
+
+/*Beginning of Style for the Section Body*/
+
+section > div{
+    padding-bottom: 20px;
+    color: rgb(211, 210, 210);
+}
+
+section > div:nth-child(1) {
+    
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    height: 300px;
+
+}
+
+section > div:nth-child(2) {
+    
+    color: rgb(211, 210, 210);
+    font-size: 20px;
+
+}
+
+section > div:nth-child(2) > div {
+    
+    padding-bottom: 40px;
+
+}
+
+section > div:nth-child(3) {
+    
+    width: 300px;
+
+}
+
+/*Beginning of Style for all the links*/
+
+#links{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0,1fr));
+    row-gap: 20px;
+
+}
+
+a {
+    color: rgb(211, 210, 210);
+}
+
+/*End of Style for all the links*/
+
+/*End of Style for the Section Body*/
 
 @media (max-width: 1500px){
 
-    .main > div {
+    main > div , section > div{
         margin-left: 150px;
         margin-right: 150px;
     }
 
-    .main > div:nth-child(3) > div{
+    main > div:nth-child(3) > div{
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         column-gap: 10px;
         row-gap: 10px;
+    }
+
+    main > div:nth-child(3) > div > div {
+        height: 200px;
     }
 
 
@@ -271,6 +361,11 @@ select {
         height: 263px;
         border-radius: 10px;
         margin: 10px;
+    }
+
+    #links{
+        grid-template-columns: repeat(3, minmax(0,1fr));
+    
     }
 
 }
@@ -293,18 +388,21 @@ select {
         
     }
 
-    .main > div {
+    main > div , section > div{
         margin-left: 100px;
         margin-right: 100px;
     }
 
-    .main > div:nth-child(3) > div{
+    main > div:nth-child(3) > div{
         display: grid;
         grid-template-columns: minmax(0, 1fr);
         grid-template-rows: minmax(0, 1fr);
         row-gap: 10px;
     }
 
+    main > div:nth-child(4) > div > div {
+        font-size: x-large;
+    }
 
     #horizontal_scroll_movie > img{
         width: 150px;
@@ -312,7 +410,19 @@ select {
         border-radius: 10px;
         margin: 5px;
     }
-    .main > div:nth-child(4) > div > div {
-        font-size: x-large;
+
+    #links{
+        grid-template-columns: repeat(2, minmax(0,1fr));
+    
     }
+
+}
+
+@media (max-width: 860px){
+
+    #links{
+        grid-template-columns: repeat(1, minmax(0,1fr));
+    
+    }
+
 }

@@ -14,17 +14,19 @@
     <script src="function.js"></script>
   </head>
   <body>
-    <div style="background-color:black; background-image: url('img/backdrop.png'); background-size:cover; background-repeat: no-repeat;">
+    <div style="background-color:black 5px; background-image: url('img/backdrop.png'); background-size:cover; background-repeat: no-repeat;">
     <div style="background-image: linear-gradient(to bottom,  rgb(0,0,0),rgb(0, 0, 0, 0.5), rgb(0,0,0)); padding-top: 2%;">
+
+
     <header style="padding-left: 8%; padding-right: 8%;">
-      <!--<img src="img/backdrop.png" width="100%" style="position: absolute; opacity: 10%; left:0"/>-->
+
       <div class="header_part1">
         
         <img class="logo" src="img/icon_img/netflix_icon.png" width="200px" />
 
         <div class="header_input">
-          <select name="language">
-            <option data-icon="glyphicon-music">English</option>
+          <select class="language" name="language">
+            <option>English</option>
             <option>Espanol</option>
           </select>
           <button name="sign-in">Sign In</button>
@@ -32,25 +34,34 @@
         
       </div>
 
+
+
       <div class="header_part2">
-      <h1>Unlimited movies, TV shows, and more</h1>
-      <h2>Starts at $7.99. Cancel anytime.</h2>
-      <div>Ready to watch? Enter your email to create or restart your membership.</div>
-      <div class="second_input">
-        <input type="email" id="email" name="email" placeholder="    Email Address">
-        <button name="sign-in">Get Started &nbsp &nbsp ></button>
+
+        <h1>Unlimited movies, TV shows, and more</h1>
+
+        <h2>Starts at $7.99. Cancel anytime.</h2>
+
+        <div>Ready to watch? Enter your email to create or restart your membership.</div>
+
+        <div class="second_input">
+          <input type="email" id="email" name="email" placeholder="    Email Address">
+          <button name="sign-in">Get Started &nbsp; ></button>
+        </div>
+
       </div>
-      </div>
+
+
+
     </header>
     <div class="colorfulDivider"></div>
     </div>
     </div>
     
     
-    <main class="main">
+    <main>
       <div>
         <img src="img/icon_img/popcorn_icon.png" width="100px" />
-
         <div class="mini_tag_container">
           <div>
             <h2>The Netflix you love for just $7.99.</h2>
@@ -62,9 +73,10 @@
         </div>
       </div>
 
+
+
       <div>
         <h1>Trending Now</h2>
-
         <div id="horizontal_scroll_movie">
           <img src="img/movie_img/movie1.png" />
           <img src="img/movie_img/movie2.png" />
@@ -79,9 +91,10 @@
         </div>
       </div>
 
+
+
       <div>
         <h1>More Reasons to Join</h2>
-
         <div>
           <div>
             <div>
@@ -132,30 +145,85 @@
           <div>What is Netflix?</div>
           <div style="font-size: 3rem; margin: 0;">+</div>
         </div>
+        <div id="q1"></div> <!--Include it for the answer part (Later on in JS)-->
         <div>
           <div>How much does Netflix cost?</div>
           <div style="font-size: 3rem; margin: 0;">+</div>
         </div>
+        <div id="q2"></div> <!--Include it for the answer part (Later on in JS)-->
         <div>
           <div>Where can I watch?</div>
           <div style="font-size: 3rem; margin: 0;">+</div>
         </div>
+        <div id="q3"></div> <!--Include it for the answer part (Later on in JS)-->
         <div>
           <div>How do I cancel?</div>
           <div style="font-size: 3rem; margin: 0;">+</div>
         </div>
+        <div id="q4"></div> <!--Include it for the answer part (Later on in JS)-->
         <div>
           <div>What can I watch on Netflix?</div>
           <div style="font-size: 3rem; margin: 0;">+</div>
         </div>
+        <div id="q5"></div> <!--Include it for the answer part (Later on in JS)-->
         <div>
           <div>Is Netflix good for kids?</div>
           <div style="font-size: 3rem; margin: 0;">+</div>
         </div>
+        <div id="q6"></div> <!--Include it for the answer part (Later on in JS)-->
       </div>
     </main>
 
-    <section></section>
+    <section>
+      <div>
+        <div style="font-size: 18px;">Ready to watch? Enter your email to create or restart your membership.</div>
+        <div class="second_input" style="width: 800px; padding-top: 20px;">
+          <input type="email" id="email" name="email" placeholder="    Email Address">
+          <button name="sign-in">Get Started &nbsp; ></button>
+        </div>
+
+      </div>
+
+      <div>
+        <div><p>Questions? Call <a href="tel:1-844-505-2993">1-844-505-2993</a></p></div>
+        <div id="links">
+            <div><a href="https://help.netflix.com/en/node/412">FAQ</a></div>
+            <div><a href="https://help.netflix.com/en">Help Center</a></div>
+            <div><a href="https://www.netflix.com/login?nextpage=https%3A%2F%2Fwww.netflix.com%2Fyouraccount">Account</a></div>
+            <div><a href="https://www.netflixhouse.com/">Netflix House</a></div>
+            <div><a href="https://media.netflix.com/en/">Media Center</a></div>
+            <div><a href="https://ir.netflix.net/ir-overview/profile/default.aspx">Investor Relations</a></div>
+            <div><a href="https://jobs.netflix.com/">Jobs</a></div>
+            <div><a href="https://www.netflix.shop/">Netflix Shop</a></div>
+            <div><a href="https://www.netflix.com/redeem">Redeem Gift Cards</a></div>
+            <div><a href="https://www.netflix.com/gift-cards">Buy Gift Cards</a></div>
+            <div><a href="https://help.netflix.com/en/node/14361">Ways to Watch</a></div>
+            <div><a href="https://help.netflix.com/legal/termsofuse">Terms of Use</a></div>
+            <div><a href="https://help.netflix.com/legal/privacy">Privacy</a></div>
+            <div><a href="index.html">Cookie Preferences</a></div>
+            <div><a href="https://help.netflix.com/en/node/134094">Corporate Information</a></div>
+            <div><a href="https://help.netflix.com/en/contactus">Contact Us</a></div>
+            <div><a href="https://fast.com/">Speed Test</a></div>
+            <div><a href="https://help.netflix.com/legal/notices">Legal Notices</a></div>
+            <div><a href="https://www.netflix.com/browse/genre/839338">Only on Netflix</a></div>
+            <div><a href="https://help.netflix.com/legal/dnsspi">Do Not Sell or Share My Personal Information</a></div>
+            <div><a href="https://help.netflix.com/legal/dnsspi#DAA">Ad Choices</a></div>
+
+            
+          </div>
+      </div>
+
+
+      <div>
+        <select class="language" name="language">
+          <option>&nbsp;&nbsp;English</option>
+          <option>&nbsp;&nbsp;Espanol</option>
+        </select>
+      </div>
+
+      <div><p>This page is protected by Google reCAPTCHA to ensure you're not a bot. <u style="color:rgb(0, 145, 255);">Learn more.</u></p></div>
+
+    </section>
   
   </body>
 </html>
