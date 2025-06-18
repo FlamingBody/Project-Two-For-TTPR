@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     transition: width 0.2s, height 0.2s, transform 0.2s;
     margin: 0;
@@ -5,7 +6,7 @@
 
 body{
     background-color: black;
-    font-family: "Funnel Display", sans-serif;
+    font-family: myFirstFont;
 }
 
 header{
@@ -56,6 +57,26 @@ button:hover{
 }
 
 .second_input > button {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 25%;
+    height: 100%;
+    font-size: 20px;
+}
+.third_input > input {
+    background-color: black;
+    color: white;
+    border: 1px solid grey;
+    border-radius: 3px;
+    width: 70%;
+    height: 100%;
+    font-size: 20px;
+}
+
+
+.third_input > button {
     background-color: red;
     color: white;
     border: none;
@@ -230,6 +251,9 @@ button:hover{
 #learnMore:hover{
     background-color: rgb(69, 69, 69);
 }
+div{
+    font-family: myFirstFont;
+}
 
 
 
@@ -273,4 +297,21 @@ button:hover{
     .main > div:nth-child(4) > div > div {
         font-size: x-large;
     }
+    @font-face {
+  font-family: myFirstFont;
+  src: url(media/fonts/NetflixSans_W_Bd.woff2);
+  
+}
+@font-face {
+  font-family: mySecondFont;
+  src: url(media/fonts/NetflixSans_W_Blk.woff2);
+  
+}
+@font-face {
+    font-family: smallFont;
+    src: url(media/fonts/NetflixSans_W_Rg.woff2);
+}
+
+#faq{
+    font-family: smallFont;
 }
